@@ -1,5 +1,6 @@
 package com.gymhelper.app;
 
+import com.gymhelper.AppApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
