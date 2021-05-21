@@ -1,10 +1,9 @@
 package com.gymhelper.domain.training.model;
 
 import java.io.Serializable;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import java.util.ArrayList;
+import java.util.List;
+import javax.persistence.*;
 
 @Entity
 public class Training implements Serializable
@@ -15,6 +14,9 @@ public class Training implements Serializable
     private Long id;
 
     private String name;
+    @OneToMany
+    @OrderColumn
+    private List<Excercise> excercises = new ArrayList<Excercise>();
 
     protected Training()
     {
@@ -28,6 +30,16 @@ public class Training implements Serializable
     public String getName()
     {
         return name;
+    }
+
+    public List<Excercise> getExcercises()
+    {
+        return excercises;
+    }
+
+    public void addExcercise(Excercise excercise)
+    {
+        this.excercises.add(excercise);
     }
 
 }

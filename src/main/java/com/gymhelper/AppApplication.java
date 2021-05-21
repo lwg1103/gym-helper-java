@@ -1,7 +1,6 @@
 package com.gymhelper;
 
-import com.gymhelper.domain.training.model.Training;
-import com.gymhelper.domain.training.repository.TrainingRepository;
+import com.gymhelper.domain.training.repository.*;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -17,12 +16,20 @@ public class AppApplication
     }
 
     @Bean
-    public CommandLineRunner demo(TrainingRepository repository)
+    public CommandLineRunner demo(TrainingRepository trainingRepository, ExcerciseRepository excerciseRepository)
     {
+//        excerciseRepository.deleteAll();
+//        trainingRepository.deleteAll();
+
         return (args) -> {
-            repository.save(new Training("first training"));
-            repository.save(new Training("second training"));
-            repository.save(new Training("third training"));
+//            Training t1 = new Training("first training");
+//            trainingRepository.save(t1);
+//            excerciseRepository.save(new Excercise("excercise one", 0, 15, 3, 60, t1));
+//            excerciseRepository.save(new Excercise("excercise two", 7, 12, 3, 90, t1));
+//            trainingRepository.save(t1);
+//
+//            trainingRepository.save(new Training("second training"));
+//            trainingRepository.save(new Training("third training"));
         };
     }
 }

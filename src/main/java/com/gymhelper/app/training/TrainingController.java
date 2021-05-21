@@ -26,13 +26,9 @@ public class TrainingController
 
     @CrossOrigin
     @GetMapping("/training")
-    public Training[] trainings()
+    public Iterable trainings()
     {
-        Training t1 = new Training("1 training");
-        Training t2 = new Training("2 training");
-        Training t3 = new Training("3 training");
-
-        return new Training[]{t1, t2, t3};
+        return repository.findAll();
     }
 
     @GetMapping("/training/{id}")
