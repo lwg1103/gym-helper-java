@@ -15,18 +15,18 @@ values
 insert into excercise (id, name, series, weight, repeats, break_time, training)
 values
 (1, "wyciskanie sztangi", 4, 45, 11, 60, 1),
-(2, "wioslowanie szeroko", 4, 40, 12, 60, 1),
-(3, "pompki na poreczach", 3, -55, 13, 60, 1),
-(4, "przyciaganie wyciagu dolnego", 3, 35, 12, 60, 1),
+(2, "wioslowanie szeroko", 4, 40, 13, 60, 1),
+(3, "pompki na poreczach", 3, -55, 14, 60, 1),
+(4, "przyciaganie wyciagu dolnego", 3, 35, 13, 60, 1),
 (5, "wznosy zgietych nog w zwisie", 3, 0, 5, 60, 1),
 (6, "brzuszki", 3, 0, 11, 60, 1),
-(7, "przysiady ze sztanga", 4, 55, 10, 60, 2),
-(8, "zginacze jedna noga", 3, 8, 17, 60, 2),
-(9, "prostowanie jedna noga", 3, 15, 18, 60, 2),
-(10, "wspiecia na palcach", 3, 25, 19, 60, 2),
-(11, "odwodzenie nogi do tyłu", 3, 15, 15, 60, 2),
-(12, "wyciskanie w gore", 4, 30, 15, 60, 3),
-(13, "sciaganie wyciagu gornego szeroko", 4, 35, 13, 60, 3),
+(7, "przysiady ze sztanga", 4, 55, 11, 60, 2),
+(8, "zginacze jedna noga", 3, 8, 18, 60, 2),
+(9, "prostowanie jedna noga", 3, 15, 19, 60, 2),
+(10, "wspiecia na palcach", 3, 25, 20, 60, 2),
+(11, "odwodzenie nogi do tyłu", 3, 15, 16, 60, 2),
+(12, "wyciskanie w gore", 4, 35, 12, 60, 3),
+(13, "sciaganie wyciagu gornego szeroko", 4, 35, 14, 60, 3),
 (14, "butterfly", 3, 30, 15, 60, 3),
 (15, "sciaganie wyciagu gornego wasko", 3, 30, 15, 60, 3),
 (16, "wznosy zgietych nog w zwisie", 3, 0, 5, 60, 3),
@@ -36,14 +36,14 @@ values
 (20, "unoszenie hantli w opadzie", 3, 6, 12, 60, 4),
 (21, "podciaganie lamanej wzdluz tułowia", 3, 25, 12, 60, 4),
 (22, "szrugsy", 3, 12, 17, 60, 4),
-(23, "uginanie ramion ze sztanga", 3, 17.5, 12, 60, 5),
+(23, "uginanie ramion ze sztanga", 3, 20, 10, 60, 5),
 (24, "sciaganie wyciagu gornego stojac", 3, 35, 11, 60, 5),
 (25, "uginanie ramion młotkowo siedzac", 3, 6, 14, 60, 5),
 (26, "wyciskanie francuskie hantli leżąc", 3, 5, 15, 60, 5),
 (27, "uginanie sztangi łamanej na modlitewniku", 3, 12.5, 15, 60, 5),
 (28, "prostowanie ramienia w opadzie", 3, 6, 15, 60, 5),
-(29, "uginanie nadgarstkow podchwytem", 3, 5, 22, 60, 5),
-(30, "uginanie nadgarstkow nadchwytem", 3, 4, 14, 60, 5);
+(29, "uginanie nadgarstkow podchwytem", 3, 6, 20, 60, 5),
+(30, "uginanie nadgarstkow nadchwytem", 3, 4, 15, 60, 5);
 
 insert into training_excercises (training_id, excercises_id, excercises_order)
 values
