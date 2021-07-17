@@ -16,15 +16,6 @@ public class TrainingController
     private TrainingRepository repository;
 
     @CrossOrigin
-    @GetMapping("/init")
-    public void init()
-    {
-        repository.save(new Training("first training"));
-        repository.save(new Training("second training"));
-        repository.save(new Training("third training"));
-    }
-
-    @CrossOrigin
     @GetMapping("/training")
     public Iterable trainings()
     {
