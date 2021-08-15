@@ -2,7 +2,13 @@ SET FOREIGN_KEY_CHECKS = 0;
 truncate training_excercises;
 truncate excercise;
 truncate training;
+truncate user;
 SET FOREIGN_KEY_CHECKS = 1;
+
+insert into user (username, password)
+values
+("user1", "user1"),
+("user2", "user2");
 
 insert into training (id, name)
 values
