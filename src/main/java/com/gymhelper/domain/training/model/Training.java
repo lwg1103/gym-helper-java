@@ -13,22 +13,33 @@ public class Training implements Serializable
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @ManyToOne
+    @JoinColumn(name = "user")
+    private User user;
+
     private String name;
     @OneToMany
     @OrderColumn
-    private List<Excercise> excercises = new ArrayList<Excercise>();
+    private final List<Exercise> exercises = new ArrayList<Exercise>();
 
     protected Training()
     {
     }
 
-    public Training(String name)
+    public Training(User user, String name)
     {
+        this.user = user;
         this.name = name;
     }
 
-    public Long getId() {
+    public Long getId()
+    {
         return id;
+    }
+
+    public User getUser()
+    {
+        return user;
     }
 
     public String getName()
@@ -36,14 +47,14 @@ public class Training implements Serializable
         return name;
     }
 
-    public List<Excercise> getExcercises()
+    public List<Exercise> getExercises()
     {
-        return excercises;
+        return exercises;
     }
 
-    public void addExcercise(Excercise excercise)
+    public void addExercise(Exercise exercise)
     {
-        this.excercises.add(excercise);
+        this.exercises.add(exercise);
     }
 
 }

@@ -1,6 +1,6 @@
 SET FOREIGN_KEY_CHECKS = 0;
-truncate training_excercises;
-truncate excercise;
+truncate training_exercises;
+truncate exercise;
 truncate training;
 truncate user;
 SET FOREIGN_KEY_CHECKS = 1;
@@ -10,15 +10,15 @@ values
 ("user1", "user1"),
 ("user2", "user2");
 
-insert into training (id, name)
+insert into training (id, `user`, name)
 values
-(1, "K&P1"),
-(2, "nogi"),
-(3, "K&P2"),
-(4, "barki"),
-(5, "ramiona");
+(1, 1, "K&P1"),
+(2, 1, "nogi"),
+(3, 1, "K&P2"),
+(4, 1, "barki"),
+(5, 1, "ramiona");
 
-insert into excercise (id, name, series, weight, repeats, break_time, training)
+insert into exercise (id, name, series, weight, repeats, break_time, training)
 values
 (1, "wyciskanie sztangi", 4, 45, 11, 60, 1),
 (2, "wioslowanie szeroko", 4, 40, 13, 60, 1),
@@ -51,7 +51,7 @@ values
 (29, "uginanie nadgarstkow podchwytem", 3, 6, 20, 60, 5),
 (30, "uginanie nadgarstkow nadchwytem", 3, 4, 15, 60, 5);
 
-insert into training_excercises (training_id, excercises_id, excercises_order)
+insert into training_exercises (training_id, exercises_id, exercises_order)
 values
 (1, 1, 0),
 (1, 2, 1),
