@@ -9,7 +9,7 @@ import java.util.Map;
 @RestController
 public class HomeController {
 
-    @GetMapping("/")
+    @GetMapping("/home")
     public Map index() {
         Map<String, String> endpoints = new HashMap<>();
         endpoints.put("/training", "all trainings for user");

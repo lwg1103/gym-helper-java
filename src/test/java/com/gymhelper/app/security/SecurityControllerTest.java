@@ -19,13 +19,12 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @SpringBootTest
 @ExtendWith(SpringExtension.class)
 @AutoConfigureMockMvc
-@TestPropertySource(
-        locations = "classpath:application-test.yml")
+@TestPropertySource(locations = "classpath:application-test.yml")
 public class SecurityControllerTest
 {
     public final String AUTH_ENDPOINT = "/authenticate";
     @Autowired
-    SecurityController securityController;
+    SecurityController controller;
 
     @Autowired
     private MockMvc mockMvc;
@@ -33,7 +32,7 @@ public class SecurityControllerTest
     @Test
     public void contextLoads()
     {
-        assertThat(securityController).isNotNull();
+        assertThat(controller).isNotNull();
     }
 
     @Test

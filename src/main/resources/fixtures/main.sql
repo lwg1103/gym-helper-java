@@ -7,8 +7,8 @@ SET FOREIGN_KEY_CHECKS = 1;
 
 insert into user (username, password)
 values
-("user1", "user1"),
-("user2", "user2");
+("user1", "$2a$10$cQ1kp0ZBjbXxHOZJLJV27eekJj8EYc03lVA8oqrzTtUS6Tex31Qpq"),
+("user2", "$2a$10$GoT2H7u6VkbpT0USu5Dgq.nSBdWcJ9mJP2f44vTNzxue87rXB1pay");
 
 insert into training (id, `user`, name)
 values
