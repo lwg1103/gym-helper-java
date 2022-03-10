@@ -4,7 +4,7 @@ import java.io.Serializable;
 import javax.persistence.*;
 
 @Entity
-public class Excercise implements Serializable
+public class Exercise implements Serializable
 {
 
     @Id
@@ -20,11 +20,11 @@ public class Excercise implements Serializable
     @JoinColumn(name = "training")
     private Training training;
 
-    protected Excercise()
+    protected Exercise()
     {
     }
 
-    public Excercise(String name, float weight, int repeats, int series, int breakTime, Training training)
+    public Exercise(String name, float weight, int repeats, int series, int breakTime, Training training)
     {
         this.name = name;
         this.weight = weight;
@@ -33,7 +33,7 @@ public class Excercise implements Serializable
         this.breakTime = breakTime;
         this.training = training;
 
-        training.addExcercise(this);
+        training.addExercise(this);
     }
 
     public String getName()

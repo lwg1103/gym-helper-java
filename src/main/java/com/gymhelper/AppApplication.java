@@ -18,18 +18,8 @@ public class AppApplication
     @Bean
     public CommandLineRunner demo(TrainingRepository trainingRepository, ExcerciseRepository excerciseRepository)
     {
-//        excerciseRepository.deleteAll();
-//        trainingRepository.deleteAll();
 
         return (args) -> {
-//            Training t1 = new Training("first training");
-//            trainingRepository.save(t1);
-//            excerciseRepository.save(new Excercise("excercise one", 0, 15, 3, 60, t1));
-//            excerciseRepository.save(new Excercise("excercise two", 7, 12, 3, 90, t1));
-//            trainingRepository.save(t1);
-//
-//            trainingRepository.save(new Training("second training"));
-//            trainingRepository.save(new Training("third training"));
         };
     }
 }
