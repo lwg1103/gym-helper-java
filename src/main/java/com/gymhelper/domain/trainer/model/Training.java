@@ -1,4 +1,4 @@
-package com.gymhelper.domain.training.model;
+package com.gymhelper.domain.trainer.model;
 
 import java.io.Serializable;
 import java.util.ArrayList;

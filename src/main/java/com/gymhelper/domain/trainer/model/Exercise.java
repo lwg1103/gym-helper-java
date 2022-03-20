@@ -1,4 +1,4 @@
-package com.gymhelper.domain.training.model;
+package com.gymhelper.domain.trainer.model;
 
 import java.io.Serializable;
 import javax.persistence.*;
@@ -36,6 +36,11 @@ public class Exercise implements Serializable
         training.addExercise(this);
     }
 
+    public Long getId()
+    {
+        return id;
+    }
+
     public String getName()
     {
         return name;
@@ -61,4 +66,33 @@ public class Exercise implements Serializable
         return breakTime;
     }
 
+    public Exercise setName(String name)
+    {
+        this.name = name;
+        return this;
+    }
+
+    public Exercise setWeight(float weight)
+    {
+        this.weight = weight;
+        return this;
+    }
+
+    public Exercise setRepeats(int repeats)
+    {
+        this.repeats = repeats;
+        return this;
+    }
+
+    public Exercise setSeries(int series)
+    {
+        this.series = series;
+        return this;
+    }
+
+    public Exercise setBreakTime(int breakTime)
+    {
+        this.breakTime = breakTime;
+        return this;
+    }
 }

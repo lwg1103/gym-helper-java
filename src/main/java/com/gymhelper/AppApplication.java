@@ -1,6 +1,6 @@
 package com.gymhelper;
 
-import com.gymhelper.domain.training.repository.*;
+import com.gymhelper.domain.trainer.repository.*;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -16,7 +16,7 @@ public class AppApplication
     }
 
     @Bean
-    public CommandLineRunner demo(TrainingRepository trainingRepository, ExcerciseRepository excerciseRepository)
+    public CommandLineRunner demo(TrainingRepository trainingRepository, ExerciseRepository excerciseRepository)
     {
 
         return (args) -> {
