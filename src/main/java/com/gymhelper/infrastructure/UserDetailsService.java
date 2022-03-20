@@ -1,7 +1,7 @@
 package com.gymhelper.infrastructure;
 
-import com.gymhelper.domain.training.model.User;
-import com.gymhelper.domain.training.repository.UserRepository;
+import com.gymhelper.domain.trainer.model.User;
+import com.gymhelper.domain.trainer.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;

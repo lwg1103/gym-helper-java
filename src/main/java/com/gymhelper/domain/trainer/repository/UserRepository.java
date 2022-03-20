@@ -1,6 +1,6 @@
-package com.gymhelper.domain.training.repository;
+package com.gymhelper.domain.trainer.repository;
 
-import com.gymhelper.domain.training.model.User;
+import com.gymhelper.domain.trainer.model.User;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.Optional;

@@ -1,4 +1,4 @@
-package com.gymhelper.domain.training.model;
+package com.gymhelper.domain.trainer.model;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;

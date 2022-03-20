@@ -1,9 +1,9 @@
-package com.gymhelper.domain.training.repository;
+package com.gymhelper.domain.trainer.repository;
 
-import com.gymhelper.domain.training.model.Training;
+import com.gymhelper.domain.trainer.model.Training;
 import java.util.List;
 
-import com.gymhelper.domain.training.model.User;
+import com.gymhelper.domain.trainer.model.User;
 import org.springframework.data.repository.CrudRepository;
 
 public interface TrainingRepository extends CrudRepository<Training, Long>
